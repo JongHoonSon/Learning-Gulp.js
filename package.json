@@ -4,8 +4,8 @@
   "description": "Learning Gulp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "gulp dev",
-    "build" : "gulp build"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
