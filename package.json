@@ -17,7 +17,7 @@
     "url": "https://github.com/JongHoonSon/Learning-Gulp.js/issues"
   },
   "homepage": "https://github.com/JongHoonSon/Learning-Gulp.js#readme",
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "@babel/register": "^7.17.7",
