@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/JongHoonSon/Learning-Gulp.js#readme",
   "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/register": "^7.17.7",
     "gulp": "^4.0.2"
   }
 }
