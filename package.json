@@ -33,7 +33,8 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-webserver": "^0.9.1",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "uglifyify": "^5.0.2"
   },
   "browserslist": [
     "last 2 versions"
