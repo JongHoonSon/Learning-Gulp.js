@@ -25,6 +25,6 @@ const prepare = gulp.series([clean]);
 
 const assets = gulp.series([pug]);
 
-const post = gulp.series([webserver, watch]);
+const post = gulp.parallel([webserver, watch]);
 
 export const dev = gulp.series([prepare, assets, post]);
