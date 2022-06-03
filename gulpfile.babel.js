@@ -9,6 +9,6 @@ const routes = {
 };
 
 export const pug = () =>
-  gulp.src(routes.pug.src).pipe(gulp_pug().pipe(gulp.dest(routes.pug.dest)));
+  gulp.src(routes.pug.src).pipe(gulp_pug()).pipe(gulp.dest(routes.pug.dest));
 
 export const dev = gulp.series([pug]);
