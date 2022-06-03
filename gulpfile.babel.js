@@ -4,6 +4,7 @@ import del from "del";
 import ws from "gulp-webserver";
 import gimage from "gulp-image";
 import autop from "gulp-autoprefixer";
+import miniCSS from "gulp-csso";
 
 const gsass = require("gulp-sass")(require("node-sass"));
 
@@ -35,6 +36,7 @@ const styles = () =>
     .src(routes.scss.src)
     .pipe(gsass().on("error", gsass.logError))
     .pipe(autop())
+    .pipe(miniCSS())
     .pipe(gulp.dest(routes.scss.dest));
 
 const clean = () => del(["build"]);
