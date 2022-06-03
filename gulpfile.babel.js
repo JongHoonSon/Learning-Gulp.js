@@ -14,4 +14,8 @@ const pug = () =>
 
 const clean = () => del(["build"]);
 
-export const dev = gulp.series([clean, pug]);
+const prepare = gulp.series([clean]);
+
+const assets = gulp.series([pug]);
+
+export const dev = gulp.series([prepare, assets]);
