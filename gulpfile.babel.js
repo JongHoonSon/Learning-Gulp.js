@@ -3,6 +3,7 @@ import gpug from "gulp-pug";
 import del from "del";
 import ws from "gulp-webserver";
 import gimage from "gulp-image";
+import autop from "gulp-autoprefixer";
 
 const gsass = require("gulp-sass")(require("node-sass"));
 
@@ -33,6 +34,7 @@ const styles = () =>
   gulp
     .src(routes.scss.src)
     .pipe(gsass().on("error", gsass.logError))
+    .pipe(autop())
     .pipe(gulp.dest(routes.scss.dest));
 
 const clean = () => del(["build"]);
